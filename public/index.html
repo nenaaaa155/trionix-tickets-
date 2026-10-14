@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trionix Tickets - Sistema de Soporte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Trionix Labs — Sistema de Soporte</h1>
+  </header>
+
+  <main class="container">
+    <div id="alert-box" class="alert hidden"></div>
+
+    <section class="forms-container">
+      <div class="card">
+        <h2>Registrar Nuevo Agente</h2>
+        <form id="agent-form">
+          <label>Nombre:</label>
+          <input type="text" id="agent-nombre" placeholder="Mínimo 3 caracteres" required>
+
+          <label>Correo Electrónico:</label>
+          <input type="email" id="agent-email" placeholder="correo@trionix.com" required>
+
+          <label>Especialidad:</label>
+          <select id="agent-especialidad" required>
+            <option value="redes">Redes</option>
+            <option value="software">Software</option>
+            <option value="hardware">Hardware</option>
+            <option value="general">General</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Guardar Agente</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Registrar Nuevo Ticket</h2>
+        <form id="ticket-form">
+          <label>Cliente:</label>
+          <input type="text" id="ticket-cliente" placeholder="Nombre del cliente" required>
+
+          <label>Asunto:</label>
+          <input type="text" id="ticket-asunto" placeholder="Mínimo 5 caracteres" required>
+
+          <label>Prioridad:</label>
+          <select id="ticket-prioridad" required>
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Crear Ticket</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="card full-width">
+      <h2>Solicitudes de Soporte</h2>
+      <div id="tickets-list" class="tickets-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
