@@ -1,14 +1,14 @@
 # Trionix Tickets - Sistema de Soporte con Agentes
 
-**Estudiante:** [Tu Nombre Completo]  
-**Asignatura:** Desarrollo Web Backend Node.js  
+**Estudiante:** Isaías Romero  
+**Asignatura:** Electiva Complementaria
 **Parcial Segundo Corte**
 
 ## Descripción
 Aplicación web construida con Node.js, Express, Mongoose y MongoDB Atlas para gestionar tickets de soporte técnico y asignación de agentes.
 
 ## URL de Despliegue
-- **URL Pública:** [Inserta la URL de Render, Railway o Google Cloud aquí]
+- **URL Pública:**https://trionix-tickets.onrender.com
 
 ## Variables de Entorno Necesarias
 Crea un archivo `.env` basado en `.env.example`:
